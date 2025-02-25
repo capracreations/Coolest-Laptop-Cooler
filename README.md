@@ -1,7 +1,7 @@
 # Coolest Laptop Cooler
 ## Overview
 ![](/images/cooler3.jpg)  
-A laptop cooler designed to support >15in laptops with two Noctua NF-P12 redux-1700 PWM fans and a soft foam seal around the perimeter of the air channel to conform to every laptops topology and force air through the intake. The cooler supports the use of a LCD1602A module with three push buttons to adjust the fan speed and PWM frequency.
+A laptop cooler designed to support >15in laptops with two Noctua NF-P12 redux-1700 PWM fans and a soft foam seal. The cooler supports the use of a LCD1602A module with three push buttons to adjust the fan speed and PWM frequency.
 
 ## Requirements
 ### Softwares
@@ -29,15 +29,20 @@ A laptop cooler designed to support >15in laptops with two Noctua NF-P12 redux-1
 ![](/images/cooler_iso.png)  
 .stl CAD files for the cooler are provided for download, parts are designed and toleranced to be **_3D-printed without supports_** (with some finicking of slicer settings). As most 3D-printers do not have massive print beds, the cooler has been split up into multiple parts to enable them to be printed. The cooler is assembled using 5x25mm steel dowels for structural stability and various sizes of M.# hex bolts.
 
-## Cooler Code, Push Buttons, Fan PWM Frequency and ON/OFF Switch
+## Cooler Code and Fan PWM Frequency
 ### Code
 The code for the cooler is very barebones, and I mean **_VERY BAREBONES_**. All I needed it to do was modulate the PWM frquency and for that purpose alone, I did not code any fancy GUI elements or complicate things more than needed. For example, all user inputs are working off the base timing of the ATmega328 clock, and thus there is no input validation for long presses, double clicks, etc. This although does not mean the code will break, as there are hard-coded limits to variable values, so user inputs cannot break the intended loop unless the code itself is edited.
-### Push Buttons
-![](/images/cooler4.jpg)  
-As stated prior, the cooler supports a LCD1602A module and three push buttons; the top (green) button increases the PWM frequency by 10%, the bottom (black) button decreases the PWM frequency by 10%, and the middle (white) button ramps the fans from any speed to 0% PWM frequency thus stopping the fans. The screen will update with the current PWM frequency and fan speed with inputs and while ramping down.
 ### Fan PWM Frequency
 ![](/images/25kHz_PWM_logic.png)  
 Noctua fans (and most computer fans) require a 25kHz clock frequency to function optimally, whereas Arduino Nano's come with a base 16kHz clock frequency from the factory. However, this can be worked around with some coding trickery by modifying the PWM output control registers and register timers for pin 9 on the Nano and setting the value to output a 25kHz frequency for the fan PWM input.
+
+## Features
+### Foam Seal
+![](/images/cooler2.jpg)
+The cooler has a soft foam seal around the perimeter of the air channel to conform to every laptops topology and force air through the intake. This ensures the laptop is actually cooled through convection from the inside rather than allowing most of the air to hit the bottom panel and escape through the gaps using a traditional cooler.
+### Push Buttons
+![](/images/cooler4.jpg)  
+As stated prior, the cooler supports a LCD1602A module and three push buttons; the top (green) button increases the PWM frequency by 10%, the bottom (black) button decreases the PWM frequency by 10%, and the middle (white) button ramps the fans from any speed to 0% PWM frequency thus stopping the fans. The screen will update with the current PWM frequency and fan speed with inputs and while ramping down.
 ### ON/OFF Switch
 ![](/images/cooler5.jpg)  
 The cooler can be turned on and off using a latching switch spliced to the positive lead of the USB-A fan power adapter, thus allowing the user to keep the device plugged-in and ready to use.
