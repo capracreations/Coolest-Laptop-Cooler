@@ -20,6 +20,7 @@ A laptop cooler designed to support >15in laptops with two Noctua NF-P12 redux-1
 - 1x Latching switch (See resources)
 - 5x25mm steel dowels (See resources)
 - Soft foam roll with tape (See resources)
+- Rubber feet (See resources)
 - 12V to 5V DC buck converter
 - M.# bolt and nut set
 - M.# threaded insert set
@@ -53,4 +54,5 @@ The cooler can be turned on and off using a latching switch spliced to the posit
 -[Latching Switch](https://www.amazon.ca/dp/B0DJ46XRP6?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)  
 -[5x25mm Steel Dowels](https://www.amazon.ca/dp/B07F3TWSBY?ref=ppx_yo2ov_dt_b_fed_asin_title)  
 -[Soft Foam Roll with Tape](https://www.amazon.ca/dp/B0B193G1WC?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)  
+-[Rubber Feet](https://www.amazon.ca/dp/B07PXNTT7K?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
 
