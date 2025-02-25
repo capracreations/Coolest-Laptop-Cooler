@@ -48,6 +48,12 @@ As stated prior, the cooler supports a LCD1602A module and three push buttons; t
 ![](/images/cooler5.jpg)  
 The cooler can be turned on and off using a latching switch spliced to the positive lead of the USB-A fan power adapter, thus allowing the user to keep the device plugged-in and ready to use.
 
+## Performance
+Prior to having made the Coolest Laptop Cooler, I was . Now my laptop is not the newest in the world and is not the most powerful device out there, sporting a 9th-gen Intel i7 CPU and a RTX2060m GPU, at the time I bought it in 2020, it was lightning fast and responsive. Years of university assignments and gaming binges eventually started showing their impact recently and I was thus running into a lot of thermal throttling issues with GPU temperatures remaining at 88°C under load causing framedrops, longer loading times, stutters, and a loss in responsiveness/performance in regular tasks. So I eventually had enough and decided to look for a solution. A quick Google search nets you a [Llano V13](https://www.amazon.ca/llano-External-Adjustable-Computer-V13/dp/B0CMTCB8Q6/ref=sr_1_2_sspa?crid=1POC0NO5GHSTU&dib=eyJ2IjoiMSJ9.YF-ljNPglwGdckR8lWSFSBiYNVTnB8ScsS9gPuYyK4zyEkwB2Pz2isaRxMyDfI0MmLOB3HVy5thqQah2AGzPVN-Q7KW6M03GhVzpQPtIIt-opvFKd606hsPbgwj5mvkqOPtRIoRVgorMg642wQXM4JZGVPCgWjoH46y9JqrpxYHkLqcqZI9ZM7-TzwKlBYHDv7iEIKZLYxtnZtNi2vNBwlB6MmC3OcY8Zgitqmy9Jg8XkZsMyGG9gqHOCaEgc-BsyZpFfX3Apz0oDuO_xIAUvbeQJFEq263VJ4Zo2n3pjZc.qbEtd4gg2JhvvftbfCLr8Dx7CVbjZUhvKNq3t8RtY7w&dib_tag=se&keywords=laptop+cooler&qid=1740464298&sprefix=laptop+cooler%2Caps%2C97&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1), which costs a WHOPPING CAD$150! "That's insane", I thought to myself, and insane it is. So I set out to make myself my own _"not as expensive"_ cooler.
+### Data and Graphs
+![](blops6_comparison.png)
+During data acquisition, It was noted that the designed cooler could achieve up to 24°C cooler temperatures on average during load, this however depends on the program and associated load on the components of all the processes taking place. To mitigate the confusion behind the true performance of the cooler, many games were tested and video streaming was also recorded for a low load test. For transparency, all raw data files, graphs and spreadsheets are available to download and peruse.
+
 ## Resources
 -[3-way Fan Splitter](https://www.amazon.ca/dp/B0DJPBXZ89?ref=ppx_yo2ov_dt_b_fed_asin_title)  
 -[USB-A Fan Power Adapter](https://www.amazon.ca/dp/B0BY43DZ11?ref=ppx_yo2ov_dt_b_fed_asin_title)  
